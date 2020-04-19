@@ -31,11 +31,11 @@
 ##### 구현
 ![stack](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fb5m0ma%2FbtqCxQOj9Zw%2FpM13PqCm2NEn8qkKMpXexK%2Fimg.png)
 
-'''C
+````
 const int MX = 1000005;
 int dat[MX];
 int pos = 0;
-'''
+````
 
 - push
 넣고 pos 1증가
