@@ -42,7 +42,7 @@ dat[tail-1];
 ![deque](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbesnXT%2FbtqCF7WTabb%2FpLsE40mTwpq0d7LMBrGiA0%2Fimg.png)
 
 
-###### STL d10 3eque
+### STL deque
 - vector와 비슷?
 - cf. vector와 달리 deque은 모든 원소들이 메모리 상에 연속하게 배치되어 있지 않습니다
 - cf. 앞쪽과 뒷쪽에서의 추가와 제거가 모두 필요하면 당연히 STL deque을 사용하는게 효율적이지만 굳이 앞쪽에서의 추가와 제거가 필요하지 않고 배열과 같은 느낌으로 쓰고싶을 땐 STL deque말고 STL vector를 쓰면 됨
