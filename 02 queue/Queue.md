@@ -6,7 +6,7 @@
 
 : 배열 기반으로도 할 수 있고 연결리스트 기반(Node라는 구조체 사용)기반으로도 할 수 있다
 
-##### 기능 및 특징
+### 기능 및 특징
 - 원소 추가 (rear에서)
 - 원소 제거 (front에서)
 - 제일 앞뒤 원소확인 
@@ -21,7 +21,7 @@
 
 - 선형배열의 큐는 데이터 삽입/삭제가 반복되면 front 와 rear가 점점 뒤로 이동해서 큐 안에 빈 공간이 있음에도 full로 인식될 수 있다. 
 
-####### 원형 큐
+### 원형 큐
 : 원형큐는 rear가 맨 끝에 도달했을 때 새로운 데이터가 추가되면 rear가 맨앞으로 돌아간다. 
 
 예를 들어 enqueue는,
@@ -31,12 +31,12 @@ rear = rear % QUEUE_SIZE
 ```
 
 
-##### 구현
-'''
+### 구현
+```
 const int MX = 1000005;
 int dat[MX];
 int head = 0, tail = 0;
-'''
+```
 
 - push 
 dat[tail++] = x
@@ -51,15 +51,15 @@ dat[tail-1]
 
 ![front/back](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbfvvNI%2FbtqCFxzXzPV%2F5Cf7uYGxZ9IaScP4Ky7odk%2Fimg.png)
 
-###### C++: STL Queue
+#### C++: STL Queue
 - queue는 BFS, FloodFill에서 자주 활용
 
-'''queue <int> Q; '''
+```queue <int> Q; ```
 - push, pop, front, back
 - queue가 empty일때 확인필요
 
 
-####### 파이썬에서 queue 구현하기
+#### 파이썬에서 queue 구현하기
 - 리스트형으로 .append와 .pop(0) 활용해서 구현
 - 파이썬 queue모듈
 ```python

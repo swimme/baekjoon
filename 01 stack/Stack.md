@@ -6,7 +6,7 @@
   
 : 배열 기반으로도 할 수 있고 연결리스트 기반(Node라는 구조체 사용)기반으로도 할 수 있다
 
-##### 기능 및 특징
+### 기능 및 특징
 - 원소 추가
 - 원소 제거
 - 제일 상단의 원소 확인
@@ -28,14 +28,14 @@
                 - 데이터 변경이 좀 더 복잡해져 시간이 오래 걸릴 수 있다.
 
 
-##### 구현
+### 구현
 ![stack](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fb5m0ma%2FbtqCxQOj9Zw%2FpM13PqCm2NEn8qkKMpXexK%2Fimg.png)
 
-'''
+````
 const int MX = 1000005;
 int dat[MX];
 int pos = 0;
-'''
+````
 
 - push
 넣고 pos 1증가
@@ -50,7 +50,7 @@ pos--;
 dat[pos-1]
 
 
-##### C++ : STL stack
+#### C++ : STL stack
 push
 pop
 top
