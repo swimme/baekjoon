@@ -54,7 +54,7 @@ dat[tail-1]
 #### C++: STL Queue
 - queue는 BFS, FloodFill에서 자주 활용
 
-'''queue <int> Q; '''
+```queue <int> Q; ```
 - push, pop, front, back
 - queue가 empty일때 확인필요
 
