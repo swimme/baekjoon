@@ -10,7 +10,7 @@ typedef pair<pair<int, int>, pair<int, int> > pii;
 int arr[102][102][102];
 bool visit[102][102][102];
  
-int dz[6] = { 1, 0, 0, 0, 0, -1, };
+int dz[6] = { 1, 0, 0, 0, 0, -1 };
 int dy[6] = { 0, 1, 0, -1, 0, 0 };
 int dx[6] = { 0, 0, 1, 0, -1, 0 };
  
@@ -25,16 +25,17 @@ int main()
             {
                 scanf("%d", &arr[i][j][k]);
                 if (arr[i][j][k] == 0)
-                    tomato++;
+                    tomato++; //안 익은 토마토수
             }
  
     // 1 : 익음, 0 : 안익음, -1 : 없음
     int day = 0;
     queue<pii> q;
+
     for (int i = 0; i < h; i++)
         for (int j = 0; j < m; j++)
             for (int k = 0; k < n; k++)
-                if (arr[i][j][k] == 1)
+                if (arr[i][j][k] == 1)  //익은 토마토 <시작점에 미리넣기>
                     q.push({ { 0,i },{ j,k } });
  
     int tmpTomato = 0;
@@ -50,7 +51,7 @@ int main()
         if (visit[z][y][x])
             continue;
  
-        day = max(day, tday);
+        day = max(day, tday); //day갱신
  
         if (arr[z][y][x] == 0)
             tmpTomato++;
@@ -76,7 +77,7 @@ int main()
         }
     }
  
-    if (tmpTomato == tomato)
+    if (tmpTomato == tomato) //안익은 토마토 모두 익은 경우
         printf("%d", day);
     else
         printf("-1");
