@@ -1,3 +1,4 @@
+//미완
 #include <queue>
 #include <iostream>
 #include <algorithm>
@@ -102,11 +103,11 @@ int main(void) {
   //day에 -1이 있으면 box의 -1개수보다 day의 -1개수가 더크면 -1 (안익은게잇)
   //                   box의 -1개수와 day의 -1개수가 같으면 0
 
-  if (count(&day[0][0][0],&day[0][0][0]+m*n*h, -1) == 0 ) {
-    cout << *max_element( &day[0][0][0],&day[0][0][0]+m*n*h) << endl;
-  } else {
-    if (count(&box[0][0][0],&box[0][0][0]+m*n*h, -1) < count(&day[0][0][0],&day[0][0][0]+m*n*h, -1)) cout << -1 << endl;
-    else cout << 0 << endl;
-  }
+  // if (count(&day[0][0][0],&day[0][0][0]+m*n*h, -1) == 0 ) {
+  //   cout << *max_element( &day[0][0][0],&day[0][0][0]+m*n*h) << endl;
+  // } else {
+  //   if (count(&box[0][0][0],&box[0][0][0]+m*n*h, -1) < count(&day[0][0][0],&day[0][0][0]+m*n*h, -1)) cout << -1 << endl;
+  //   else cout << 0 << endl;
+  // }
   
 }

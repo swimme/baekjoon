@@ -49,7 +49,7 @@ int full() {
 	else return 0;
 }
 
-int main3() {
+int main() {
 	int n;
 	int k;
 

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int mamin(void) {
+int main(void) {
 	int size;
 	cin >> size;
 

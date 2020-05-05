@@ -9,7 +9,7 @@
 #include <algorithm>
 using namespace std;
 
-//boj10845
+//stlQueue
 int main(void) {
 	int n; //명령어수
 	cin >> n;

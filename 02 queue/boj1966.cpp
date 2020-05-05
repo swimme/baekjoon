@@ -1,13 +1,14 @@
+//다시
 //#include <bits/stdc++.h>
-#include <iostream>
-#include <string>
-#include <map>
-#include <set>
-#include <queue>
-#include <vector>
-#include <functional>
-#include <algorithm>
-using namespace std;
+// #include <iostream>
+// #include <string>
+// #include <map>
+// #include <set>
+// #include <queue>
+// #include <vector>
+// #include <functional>
+// #include <algorithm>
+// using namespace std;
 
 // 1. front의 중요도를 확인
 // 2. 나머지중 top보다 중요도높은거 잇으면
@@ -66,37 +67,37 @@ using namespace std;
 
 // 2 3 4 5 0 1 (우선순위큐 빼기 - 뺀 값의 index확인 불가?)
 
-int main(void) {
+// int main(void) {
 
-	int test;
-	int n, m; //n개만큼 큐에 push //m 원하는 문서의 index
+// 	int test;
+// 	int n, m; //n개만큼 큐에 push //m 원하는 문서의 index
 
-	cin >> test;
+// 	cin >> test;
 
-	cin >> n >> m; 
+// 	cin >> n >> m; 
 
-//중요도를 배열&큐로 받아 max 함수써서 
-	// 중요도큐 front == max이면 pop? 
-	// 아니면 front pop&push
-	// 배열에서 m의 중요도 몇인지 확인 [0]==1
+// //중요도를 배열&큐로 받아 max 함수써서 
+// 	// 중요도큐 front == max이면 pop? 
+// 	// 아니면 front pop&push
+// 	// 배열에서 m의 중요도 몇인지 확인 [0]==1
 
-	// [1] 1 9 1 1 1  
-	// 1 9 1 1 1 [1] 
-	// 9 1 1 1 [1] 1 
+// 	// [1] 1 9 1 1 1  
+// 	// 1 9 1 1 1 [1] 
+// 	// 9 1 1 1 [1] 1 
 
-	//max를 기준으로 정렬?
+// 	//max를 기준으로 정렬?
 
-	// queue할때
-	queue <int> q;
-	for (int i = 0; i < n; i++) { //n개만큼 q에 push
-		int dat;
-		cin >> dat;
-		q.push(dat);
+// 	// queue할때
+// 	queue <int> q;
+// 	for (int i = 0; i < n; i++) { //n개만큼 q에 push
+// 		int dat;
+// 		cin >> dat;
+// 		q.push(dat);
 
-	}
+// 	}
 
-	return 0;
-}
+// 	return 0;
+// }
 
 
 #include <iostream>

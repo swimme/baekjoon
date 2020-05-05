@@ -18,7 +18,7 @@ using namespace std;
 // top보다 낮은게 들어올때는 그냥 push
 // top보다 (같거나) 높은게 들어올때는 낮은게 나올때까지 S.pop하고 넣기 - size return
 
-int main2(void) {
+int main(void) {
 	int cnt = 1; //보이는 막대기 수
 	int n; //막대기개수
 	cin >> n;
