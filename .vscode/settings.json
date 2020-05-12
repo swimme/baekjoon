@@ -7,6 +7,12 @@
     "xutility": "cpp",
     "xstring": "cpp",
     "xiosbase": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "vector": "cpp",
+    "deque": "cpp",
+    "initializer_list": "cpp",
+    "list": "cpp",
+    "xhash": "cpp",
+    "xtree": "cpp"
   }
 }

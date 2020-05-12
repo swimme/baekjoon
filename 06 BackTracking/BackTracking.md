@@ -8,6 +8,7 @@
 - boj15649: N과 M(1)
 - 백트래킹을 이용해 비어있는 리스트에서 시작해 수를 하나씩 추가하면서 길이가 M인 수열을 만들면 해당 수열을 출력하면 됩니다.
   !image[boj15649](https://t1.daumcdn.net/cfile/tistory/99B1AA3A5C3721B02D)
+
 - 수를 추가할땐 어떤 수가 수열에 이미쓰였고 어떤 수가 쓰이지 않았는지 따로 저장하고 있어야함
   !image[boj15649_2](https://t1.daumcdn.net/cfile/tistory/99227B3A5C3721B128)
 
