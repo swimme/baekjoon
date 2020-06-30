@@ -1,2 +1,2 @@
-# DataStructure
-2020-1 DS study
+# algorithm
+2020-1 algorithm study
