@@ -38,13 +38,10 @@ for n in a:
 # def add_digit(num):
 #   for i in str(num):
 #     num += int(i)
-
 #   if num > 10: 
 #     return 
-
 #   if num in a:
 #     a.remove(num)
-
 #   return add_digit(num)
 
 # for i in range(1,100):
