@@ -26,7 +26,7 @@ else:
 
 #또다른 변수 사용 check
 cnt = 0
-def check_digit(n):
+def check_digit2(n):
   check = False
   digit = list(map(int,str(n)))
  
@@ -38,7 +38,7 @@ if n < 100:
   print(n)
 else:
   for i in range(100,n+1):
-    if check_digit(i) == True:
+    if check_digit2(i) == True:
       cnt+=1
   print(99+cnt)
 
