@@ -20,7 +20,7 @@
 
     [https://www.fun-coding.org/Chapter11-heap.html](https://www.fun-coding.org/Chapter11-heap.html)
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50610dd7-38e1-45ba-a730-e5a55ccf4a9a/_2021-01-12__3.29.12.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50610dd7-38e1-45ba-a730-e5a55ccf4a9a/_2021-01-12__3.29.12.png)
+    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50610dd7-38e1-45ba-a730-e5a55ccf4a9a/_2021-01-12__3.29.12.png](https://images.velog.io/images/swimme/post/f46e9016-3c4a-40a1-aa7d-9d6528f3bd67/스크린샷%202021-01-12%20오후%209.16.46.png)
 
   ### 삽입
 
@@ -73,5 +73,23 @@
 > 해시는 효율적인 데이터 적재와 보안 등의 상황에서, 힙은 속도가 중요한 자료구조가 필요할 때 사용하곤 하는데 실무에서 이런 것들을 바닥부터 구현해서 쓸 일은 거의 없지만, 이 개념을 정확히 이해하면 프로그래밍 기본 실력에 큰 도움이 된다.
 
 - 프로그래머스
+
   - [더 맵게](./prog01.py)
+
     > 형제 노드와의 대소관계는 관련 없음을 주의할 것. 따라서 최대/최소는 인덱싱 [0]또는 [1]로 가능하지만 두번째로 작은 수는 인덱싱으로 알 수 없다.
+
+  - [디스크 컨트롤러](./prog02.py)
+
+    > 시간이 흐름에 따라 재heapify해야 하는 문제<br/>
+    > 시간 내 요청된 작업이 있는 경우, 없는 경우로 나눠서 처리하면 됨 <br/>
+    >
+    > - 시간 내 요청된 작업이 있는 경우<br/>
+    >   : 그 작업들에 대해 **<i>처리시간을 기준으로</i>** heapify<br/>
+    >   : 시간이 지남에 따라 작업들을 계속 갱신(heappush)해야함 <br/><br/>
+    > - **시간 내 요청된 작업이 없는 경우**<br/>
+    >   : 요청시점이 (햔재)시간이 돼도록 해야 함 <i>(처음에 놓친 부분)</i>
+
+    ```python
+    a = [[1, 2], [3, 4]]
+    print(a.pop()[::-1]) #[4, 3]
+    ```
