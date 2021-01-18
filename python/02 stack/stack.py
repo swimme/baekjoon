@@ -3,9 +3,6 @@
 import sys
 n = int(input())
 a = []
-# for _ in range(n):
-#   cmd = input().split()
-#   if cmd[0] == "push"
 
 for line in sys.stdin:
   x = line.strip().split() 
@@ -27,7 +24,6 @@ for line in sys.stdin:
     if len(a) == 0:
       print(-1)
     else:
-      # print(a[len(a)-1])
       print(a[-1])
 
 
