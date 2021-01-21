@@ -1,3 +1,16 @@
+# Queue
+
+- 가장 먼저 저장된 데이터가 가장 먼저 꺼내지는 자료구조
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aadb4e0e-51b6-477a-8f66-eb81e10bd930/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aadb4e0e-51b6-477a-8f66-eb81e10bd930/Untitled.png)
+
+- FIFO ; First In, First Out 구조
+- 한 쪽(rear)에서 데이터가 들어가고 반대쪽(front)에서 데이터가 나온다
+- 배열 기반으로도 할 수 있고 연결리스트 기반(Node라는 구조체 사용)기반으로도 할 수 있다
+- queue는 **BFS**, **Flood Fill**에서 자주 활용
+
+## 구현
+
 - 원소 추가 (rear에서) O(1)
 - 원소 제거 (front에서) O(1)
 - 제일 앞 뒤 원소확인 O(1)
